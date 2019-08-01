@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to the Mood Booster</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body class="blue-grey lighten-4">
+  
+  <h1 class="center-align"> What is your mood? </h1>
+  
+  <form method="post" action="/results">
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="Happy" checked />
+        <span>Happy</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="sad" />
+        <span>Sad</span>
+      </label class="block">
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="ambitious"  />
+        <span>Ambitious</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="angry" />
+        <span>Angry</span>
+      </label>
+    </p>
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="woke" />
+        <span>Woke</span>
+      </label 
+    </p>
+    <p>
+      <br></br>
+      
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    </button>
+  
+    </p>
+    
+  </form>
+  
+
+  
+  
+  
+  
+  
+  <form method="post" action="/quiz">
+    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>quiz</button>
+  </form>
+  
+
+  
+
+
+</body>
+
+</html>

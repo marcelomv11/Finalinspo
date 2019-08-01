@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/static/stylequiz.css" type="text/css"
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <center><h1 class="title">Quality of Life Quiz</h1></center>
+        <div class="row">
+            <div class="col s6 purple lighten-4">
+                <center><h4 class="questions">If someone was to playfully punch you, how would you react?</h4></center>
+                <form method="post" action="/quizresults">
+                    <p>
+                        <label>
+                            <input name="q1" type="radio" value="q1-a1" />
+                                <span class="questionchoices">Playfully hit them back</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                             <input name="q1" type="radio" value="q1-a2"/>
+                                <span class="questionchoices">Ignore them</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="q1" type="radio" value="q1-a3"  />
+                                <span class="questionchoices">Get mad</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="q1" type="radio" value="q1-a4"/>
+                                <span class="questionchoices">Start laughing</span>
+                        </label>
+                    </p>
+            </div>
+            <div class="col s6 purple lighten-4">
+                <center><h4 class="questions">With the mood you are in right now, how do you feel about yourself?</h4></center>
+                <form method="post" action="/quizresults">
+                    <p>
+                        <label>
+                                <input name="q2" type="radio" value="q2-a1" />
+                                    <span class="questionchoices">I am proud of myself</span>
+                            </label>
+                    </p>
+                    <p>
+                        <label>
+                                 <input name="q2" type="radio" value="q2-a2" />
+                                    <span class="questionchoices">I feel down</span>
+                            </label>
+                    </p>
+                    <p>
+                        <label>
+                                <input class="with-gap" name="q2" type="radio" value="q2-a3"  />
+                                    <span class="questionchoices">I don't care about myself</span>
+                            </label>
+                    </p>
+                    <p>
+                        <label>
+                                <input name="q2" type="radio" value="q2-a4" />
+                                    <span class="questionchoices">I feel ok</span>
+                            </label>
+                    </p>
+            </div>
+        </div>
+    <br></br>
+
+    <div class="row purple lighten-4">
+        <div class="col s6">
+            <center><h4 class="questions">A random person walks up to you and starts a conversation, what do you say back?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q3" type="radio" value="q3-a1" />
+                            <span class="questionchoices">"Why are you talking to me?"</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q3" type="radio" value="q3-a2" />
+                            <span class="questionchoices">Ignore them</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q3" type="radio" value="q3-a3" />
+                            <span class="questionchoices">Greet them back, but then walk away</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q3" type="radio" value="q3-a4" />
+                            <span class="questionchoices">Start a conversation</span>
+                    </label>
+                </p>
+        </div>
+
+        <div class="col s6">
+            <center><h4 class="questions">How much energy do you feel you have right now?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q4" type="radio" value="q4-a1" />
+                            <span class="questionchoices">I feel like sleeping right now</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q4" type="radio" value="q4-a2" />
+                            <span class="questionchoices"> I feel like going for run</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q4" type="radio" value="q4-a3" />
+                            <span class="questionchoices">I'm feeling calm</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q4" type="radio" value="q4-a4" />
+                            <span class="questionchoices">I am ready to hang out with friends and party</span>
+                    </label>
+                </p>
+        </div>
+    </div>
+    
+    <br> </br>
+
+    <div class="row purple lighten-4">
+        <div class="col s6">
+            <center><h4 class="questions">What type of songs are you into right now?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q5" type="radio" value="q5-a1" />
+                            <span class="questionchoices">Soft calm music</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q5" type="radio" value="q5-a2" />
+                            <span class="questionchoices">I don't feel lke listening to music right now, I prefer silence</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q5" type="radio" value="q5-a3"  />
+                            <span class="questionchoices">Fast paced</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q5" type="radio" value="q5-a4" />
+                            <span class="questionchoices">Heavy and slow songs</span>
+                    </label>
+                </p>
+        </div>
+    
+        <div class="col s6">
+            <center><h4 class="questions">If you were to go out right now, what would you be doing?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q6" type="radio" value="q6-a1" />
+                            <span class="questionchoices">Go shopping</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q6" type="radio" value="q6-a2" />
+                            <span class="questionchoices">I don't want to go out I want to stay home and watch Netflix</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q6" type="radio" value="q6-a3"  />
+                            <span class="questionchoices">I want to go to the gym</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q6" type="radio" value="q6-a4"/>
+                            <span class="questionchoices">Go to a party and spend time with friends and family</span>
+                    </label>
+                </p>
+        </div>
+    </div>
+    <br></br>
+    <div class="row purple lighten-4">
+            <div class="col s6">
+                <center><h4 class="questions">Do you think you are going to achieve your goals and dreams by the end of your lifetime?</h4></center>
+                <form method="post" action="/quizresults">
+                    <p>
+                        <label>
+                            <input name="q7" type="radio" value="q7-a1"/>
+                                <span class="questionchoices">Of course I am, I am able to accomplish anything</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                             <input name="q7" type="radio" value="q7-a2"/>
+                                <span class="questionchoices">I do not want to be too confident, but I think I may be able to acheive some of my personal goals</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="q7" type="radio" value="q7-a3" />
+                                <span class="questionchoices">Probably not, my dreams are too far fetched</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="q7" type="radio" value="q7-a4" />
+                                <span class="questionchoices">I do not think I will accomplish any of my goals</span>
+                        </label>
+                    </p>
+            </div>
+        <div class="col s6">
+            <center><h4 class="questions">You are reading a book and suddenly a minor character dies. How do you react?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q8" type="radio" value="q8-a1" />
+                            <span class="questionchoices">Keep reading, the book has gotten interesting!</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q8" type="radio" value="q8-a2"/>
+                            <span class="questionchoices">Cry, even if the death is not real, it is still very unsettling</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q8" type="radio" value="q8-a3" />
+                            <span class="questionchoices">Start to feel sorry for the character's family</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q8" type="radio" value="q8-a4"  />
+                            <span class="questionchoices">Stop reading and throw the book out the window in rage</span>
+                    </label>
+                </p>
+        </div>
+    </div>
+    <br></br>
+    <div class="row purple lighten-4">
+        <div class="col s6">
+            <center><h4 class="questions">How would you feel if this quiz was over?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q9" type="radio" value="q9-a1"/>
+                            <span class="questionchoices">Content</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q9" type="radio" value="q9-a2"/>
+                            <span class="questionchoices">Low-spirited</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q9" type="radio" value="q9-a3" />
+                            <span class="questionchoices">Frustrated</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q9" type="radio" value="q9-a4" />
+                            <span class="questionchoices">It's whatever, there are other quizzes anyway</span>
+                    </label>
+                </p>
+        </div>
+        <div class="col s6">
+            <center><h4 class="questions">How would you feel if this quiz meant nothing?</h4></center>
+            <form method="post" action="/quizresults">
+                <p>
+                    <label>
+                        <input name="q10" type="radio" value="q10-a1" />
+                            <span class="questionchoices">Break my device out of rage</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                         <input name="q10" type="radio" value="q10-a2" />
+                            <span class="questionchoices">Be happy since I am able to move on with other things</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="q10" type="radio" value="q10-a3"  />
+                            <span class="questionchoices">Get sad since the quiz is over</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="q10" type="radio" value="q10-a4" />
+                            <span class="questionchoices">Start laughing like you have just heard the funniest joke ever</span>
+                    </label>
+                </p>
+        </div>
+    </div>
+
+
+    
+   
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+      </button>
+    <br></br>
+    </form>
+      <form method="get" action="/index">
+        <button class="btn waves-effect waves-light" type="submit" formtarge="_blank"></i>Go back</button>
+    </form>
+</body>
+
+</html>
