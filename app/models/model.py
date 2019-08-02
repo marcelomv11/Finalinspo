@@ -16,6 +16,7 @@ Surprised = ["Time changes everything except somethig within us which is always 
 
 Disgust = ["The greatest pleasures are only narrowly separated from disgust", "Disgust and resolve are two of the greatest things that lead to change", "Disgust is the most appropriate response to most situations"]
 
+Confused = ["If I look confused it is because I am thinkning", "Right now, I'm stuck between what if, what might, what could have, and what never will and all I want to known is what actuallly is", "I don't think people understand how stressful how stressful it is to explain what's going on in your head when you don't even understand it yourself."]
 
 random.shuffle(Ambitious)
 random.shuffle(Sad)
@@ -25,6 +26,7 @@ random.shuffle(Woke)
 random.shuffle(Scared)
 random.shuffle(Surprised)
 random.shuffle(Disgust)
+random.shuffle(Confused)
 
 
 
@@ -80,6 +82,10 @@ def find_quote(mood):
         random.shuffle(Disgust)
         one_quote = Disgust[0]
         return one_quote
+    elif mood.capitalize() == "Confused":
+        random.shuffle(Confused)
+        one_quote = Confused[0]
+        return one_quote
         
         
     else:
@@ -112,6 +118,10 @@ def color(mood):
     if mood.capitalize() == "Disgust":
         mood_color = "gray lighten-9"
         return mood_color
+    if mood.capitalize() == "Confused":
+        mood_color = " lime accent-2"
+        return mood_color
+        
         
         
     
