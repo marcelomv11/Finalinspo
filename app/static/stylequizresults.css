@@ -11,21 +11,13 @@
 .FirstHeader{
     font-family: 'Baloo Chettan', cursive;
 }
-/*.font_styling {*/
-/*    font-family: 'Oswald', sans-serif;*/
-/*    font-size: large;*/
-/*}*/
+.links {
+    color: #5f5a9c;
+    font-weight: bold;
+}
 
-
-/*.background { */
-/*    background-color: white;*/
-/*} */
-
-/*.font_styling {*/
-/*    font-family: 'Oswald', sans-serif;*/
-/*    font-size: large;*/
-/*}*/
-
-/*.spacing {*/
-/*    padding: 50px 100px 30px 30px;*/
+.text {
+    color: #000080;
+    font-weight: bold;
+}
 /*}*/

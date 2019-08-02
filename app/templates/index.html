@@ -5,46 +5,72 @@
   <title>Welcome to the Mood Booster</title>
   <link rel="stylesheet" type="text/css" href="/static/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="blue-grey lighten-4">
   
-  <h1 class="center-align"> What is your mood? </h1>
+  <center><h1 class="title"> What is your mood? </h1></center>
   
   <form method="post" action="/results">
     <p>
       <label class="block">
         <input name="mood" type="radio" value="Happy" checked />
-        <span>Happy</span>
+        <span class="answer">Happy</span>
       </label>
     </p>
     <p>
       <label class="block">
         <input name="mood" type="radio" value="sad" />
-        <span>Sad</span>
+        <span class="answer">Sad</span>
       </label class="block">
     </p>
     <p>
       <label class="block">
         <input name="mood" type="radio" value="ambitious"  />
-        <span>Ambitious</span>
+        <span class="answer">Ambitious</span>
       </label>
     </p>
     <p>
       <label class="block">
         <input name="mood" type="radio" value="angry" />
-        <span>Angry</span>
+        <span class="answer">Angry</span>
       </label>
     </p>
     <p>
       <label class="block">
         <input name="mood" type="radio" value="woke" />
-        <span>Woke</span>
+        <span class="answer">Woke</span>
       </label 
     </p>
     <p>
-      <br></br>
       
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="scared" />
+        <span class="answer">Scared</span>
+      </label 
+    </p>
+    <p>
+    
+    
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="surprised" />
+        <span class="answer">Surprised</span>
+      </label 
+    </p>
+    
+    <p>
+      <label class="block">
+        <input name="mood" type="radio" value="disgust" />
+        <span class="answer">Disgust</span>
+      </label 
+    </p>
+    
+    
     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     </button>
   
@@ -59,7 +85,7 @@
   
   
   <form method="post" action="/quiz">
-    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>quiz</button>
+    <button class= "btn-large pulse"><i class="material-icons" type="submit" formtarget="_blank"></i>Take Quality of Life Quiz</button>
   </form>
   
 

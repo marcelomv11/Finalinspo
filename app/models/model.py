@@ -1,6 +1,6 @@
 import random
 
-Ambitious = [ "Shoutout to the girls who put in major work. Who are up early ass hell for school/work. Girls that study. Grind. Who persevere & prioritize self worth/lov. Who rise above & hold it down even when they're falling apart, to the girls whopush harder.", "I used to think going to sleep late was cool. Till I realized wakin up early was the real boss shit.", "if you look at people in your circle and don't get inspired.then you don't have a circle, you have a cage", "shout out to everyone making progress that no one recognize", "Don't limit your challlenges. Challenge your limits!", "Yes it is going to be hard but it's going to be worth it!"
+Ambitious = [ "Shoutout to the girls who put in major work. Who are up early ass hell for school/work. Girls that study. Grind. Who persevere & prioritize self worth/lov. Who rise above & hold it down even when they're falling apart, to the girls whopush harder.", "I used to think going to sleep late was cool. Till I realized wakin up early was the real boss shit.", "if you look at people in your circle and don't get inspired, then you don't have a circle, you have a cage", "shout out to everyone making progress that no one recognize", "Don't limit your challlenges. Challenge your limits!", "Yes it is going to be hard but it's going to be worth it!"
     ]
 Angry = [ "Speak when you are angry and you'll make the best speech you'll ever REGRET!!!", "Never let your emotions overpower your intelligence!!!", "Don't do something permanentely stupid just because you're temporarily upset!!", "Anger dosen't solve anything. It builds nothing, but it can destroy everything.", "You will not be punished for your anger, you will be punished by your anger."]
 
@@ -8,10 +8,13 @@ Sad = [ "Be strong because things will get better. It maybe stormy now but it ne
 
 Happy = [ "Being happy NEVER goes out of style. :)", "Happiness is letting go of what you think your life is supposed to be. :)", "It's fun to be happy. :)", "People look at you as a role model when you happy. :)","Happiness never decreases by being shared. :)" ]
 
-Woke = [ "It's not the world that's cruel. It's the people in it.", "Life is not a problem to be solved, but a reality to be experienced.", "Dead people receive more flowers than the living ones because regret is stronger than gratitude.", "Listen to your possibilites not your insecurities", "OUTSIDERS know all your business from INSIDERS. ", "Be forgiving, Be understanding, But don't be a fool.", 
-    
-    
-    ]
+Woke = [ "It's not the world that's cruel. It's the people in it.", "Life is not a problem to be solved, but a reality to be experienced.", "Dead people receive more flowers than the living ones because regret is stronger than gratitude.", "Listen to your possibilites not your insecurities", "OUTSIDERS know all your business from INSIDERS. ", "Be forgiving, Be understanding, But don't be a fool.", ]
+
+Scared = [ "Sometimes what you are most afraid of doing is the very thing that will set you free", "Don't be afraid to fail. Be afraid not to try", "It is okay to be scared because that means you are about to do something very very brave" ]
+
+Surprised = ["Time changes everything except somethig within us which is always surprised by change", "Face what you think you believe and you will be surprised", "To be surprised, to wonder, is to begin to understand"]
+
+Disgust = ["The greatest pleasures are only narrowly separated from disgust", "Disgust and resolve are two of the greatest things that lead to change", "Disgust is the most appropriate response to most situations"]
 
 
 random.shuffle(Ambitious)
@@ -19,6 +22,23 @@ random.shuffle(Sad)
 random.shuffle(Angry)
 random.shuffle(Happy)
 random.shuffle(Woke)
+random.shuffle(Scared)
+random.shuffle(Surprised)
+random.shuffle(Disgust)
+
+
+
+
+    
+
+
+# random.shuffle(Ambitious)
+
+# random.shuffle(Sad)
+# random.shuffle(Angry)
+# random.shuffle(Happy)
+# random.shuffle(Woke)
+# random.shuffle(Scared)
 
 
 # def submit_emotion(mood):
@@ -48,6 +68,18 @@ def find_quote(mood):
         random.shuffle(Woke)
         one_quote = Woke[0]
         return one_quote
+    elif mood.capitalize() == "Scared":
+        random.shuffle(Scared)
+        one_quote = Scared[0]
+        return one_quote
+    elif mood.capitalize() == "Surprised":
+        random.shuffle(Surprised)
+        one_quote = Surprised[0]
+        return one_quote
+    elif mood.capitalize() == "Disgust":
+        random.shuffle(Disgust)
+        one_quote = Disgust[0]
+        return one_quote
         
         
     else:
@@ -71,6 +103,16 @@ def color(mood):
     if mood.capitalize() == "Woke":
         mood_color = "red lighten-4"
         return mood_color
+    if mood.capitalize() == "Scared":
+        mood_color = "purple lighten-2"
+        return mood_color
+    if mood.capitalize() == "Surprised":
+        mood_color = "yellow lighten-4"
+        return mood_color
+    if mood.capitalize() == "Disgust":
+        mood_color = "gray lighten-9"
+        return mood_color
+        
         
     
     
