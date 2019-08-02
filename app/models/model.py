@@ -18,6 +18,8 @@ Disgust = ["The greatest pleasures are only narrowly separated from disgust", "D
 
 Confused = ["If I look confused it is because I am thinkning", "Right now, I'm stuck between what if, what might, what could have, and what never will and all I want to known is what actuallly is", "I don't think people understand how stressful how stressful it is to explain what's going on in your head when you don't even understand it yourself."]
 
+Heartbroken = ["I am happy, hurting and healing at the same time. Don't ask how I'm doing it because I don't know, but i'm doing it and I'm so proud of myself", "the more chances you give someone to heart you the less respect they'll start to have for you"]
+
 random.shuffle(Ambitious)
 random.shuffle(Sad)
 random.shuffle(Angry)
@@ -27,6 +29,7 @@ random.shuffle(Scared)
 random.shuffle(Surprised)
 random.shuffle(Disgust)
 random.shuffle(Confused)
+random.shuffle(Heartbroken)
 
 
 
@@ -86,6 +89,10 @@ def find_quote(mood):
         random.shuffle(Confused)
         one_quote = Confused[0]
         return one_quote
+    elif mood.capitalize() == "Heartbroken":
+        random.shuffle(Heartbroken)
+        one_quote = Heartbroken[0]
+        return one_quote
         
         
     else:
@@ -121,6 +128,9 @@ def color(mood):
     if mood.capitalize() == "Confused":
         mood_color = " lime accent-2"
         return mood_color
+    if mood.capitalize() == "Heartbroken":
+        mood_color = " red lighten-4"
+        return mood_color
         
         
         
@@ -138,9 +148,10 @@ def find_pointsq1(answer):
     if answer == "q1-a3":
         pointcounter = 2
         return pointcounter
-    else:
+    if answer == "q1-a4":
         pointcounter = 1
-        return pointcounter
+        return pointcounter  
+
 
 def find_pointsq2(answer):
     if answer == "q2-a1":

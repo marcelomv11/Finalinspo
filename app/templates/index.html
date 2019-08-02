@@ -15,69 +15,80 @@
   <center><h1 class="title"> What is your mood? </h1></center>
   
   <form method="post" action="/results">
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="Happy" checked />
-        <span class="answer">Happy</span>
-      </label>
-    </p>
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="sad" />
-        <span class="answer">Sad</span>
-      </label class="block">
-    </p>
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="ambitious"  />
-        <span class="answer">Ambitious</span>
-      </label>
-    </p>
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="angry" />
-        <span class="answer">Angry</span>
-      </label>
-    </p>
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="woke" />
-        <span class="answer">Woke</span>
-      </label 
-    </p>
-    <p>
+    <div class="row">
+      <div class="col l6">
+          <label class="block">
+            <input name="mood" type="radio" value="Happy" checked />
+            <span class="answer" style="font-size: 40px">Happy</span>
+          </label>
+      </div>
+      <div class="col l6">
+          <label class="block">
+            <input name="mood" type="radio" value="sad" />
+            <span class="answer" style="font-size: 40px">Sad</span>
+          </label>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="ambitious"  />
+          <span class="answer" style="font-size: 40px">Ambitious</span>
+        </label>
+      </div>
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="angry" />
+          <span class="answer" style="font-size: 40px">Angry</span>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="woke" />
+          <span class="answer" style="font-size: 40px">Woke</span>
+        </label>
+      </div>
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="scared" />
+          <span class="answer"style="font-size: 40px">Scared</span>
+        </label> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="surprised" />
+          <span class="answer" style="font-size: 40px">Surprised</span>
+        </label>
+      </div>
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="disgust" />
+          <span class="answer" style="font-size: 40px">Disgusted</span>
+        </label> 
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="confused" />
+          <span class="answer" style="font-size: 40px">Confused</span>
+        </label> 
+      </div>
       
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="scared" />
-        <span class="answer">Scared</span>
-      </label 
-    </p>
-    <p>
     
+    <div class="row">
+      <div class="col l6">
+        <label class="block">
+          <input name="mood" type="radio" value="heartbroken" />
+          <span class="answer" style="font-size: 40px">Heartbroken</span>
+        </label> 
+      </div>
     
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="surprised" />
-        <span class="answer">Surprised</span>
-      </label 
-    </p>
-    
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="disgust" />
-        <span class="answer">Disgusted</span>
-      </label 
-    </p>
-    
-    <p>
-      <label class="block">
-        <input name="mood" type="radio" value="confused" />
-        <span class="answer">Confused</span>
-      </label 
-    </p>
-    
-    
+    </div> 
     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     </button>
   

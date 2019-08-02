@@ -47,26 +47,19 @@ def quizresults():
         return render_template("quiz.html")
     else:
         user_data = request.form
-        print(user_data)
-        user_answer1 = user_data["q1"]
-        print(user_answer1)
-        user_answer2 = user_data["q2"]
-        
-        user_answer3 = user_data["q3"]
-        
-        user_answer4 = user_data["q4"]
-        
-        user_answer5 = user_data["q5"]
-        
-        user_answer6 = user_data["q6"]
-        
-        user_answer7 = user_data["q7"]
-        
-        user_answer8 = user_data["q8"]
-        
-        user_answer9 = user_data["q9"]
-        
-        user_answer10 = user_data["q10"]
+        try:
+            user_answer1 = user_data["q1"]
+            user_answer2 = user_data["q2"]
+            user_answer3 = user_data["q3"]
+            user_answer4 = user_data["q4"]
+            user_answer5 = user_data["q5"]
+            user_answer6 = user_data["q6"]
+            user_answer7 = user_data["q7"]
+            user_answer8 = user_data["q8"]
+            user_answer9 = user_data["q9"]
+            user_answer10 = user_data["q10"]
+        except:
+            return render_template("quizerror.html")
         
         total_points = model.find_pointsq1(user_answer1) + model.find_pointsq2(user_answer2) + model.find_pointsq3(user_answer3) + model.find_pointsq4(user_answer4) + model.find_pointsq5(user_answer5) + model.find_pointsq6(user_answer6) + model.find_pointsq7(user_answer7) + model.find_pointsq8(user_answer8) + model.find_pointsq9(user_answer9) + model.find_pointsq10(user_answer10) 
         print(total_points)
@@ -76,6 +69,7 @@ def quizresults():
             print("You are ok")
         else:
             print("You are happy")
+
             
         depression_diagnosis = model.depression_suggestion(total_points)
         return render_template("quizresults.html", user_answer1 = user_answer1, user_answer2 = user_answer2, user_answer3 = user_answer3, user_answer4 = user_answer4, user_answer5 = user_answer5, user_answer6 = user_answer6, user_answer7 = user_answer7, user_answer8 = user_answer8, user_answer9 = user_answer9, user_answer10 = user_answer10, total_points = total_points, depression_diagnosis = depression_diagnosis)
