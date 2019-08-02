@@ -1,6 +1,6 @@
 import random
 
-Ambitious = [ "Shoutout to the girls who put in major work. Who are up early ass hell for school/work. Girls that study. Grind. Who persevere & prioritize self worth/lov. Who rise above & hold it down even when they're falling apart, to the girls whopush harder.", "I used to think going to sleep late was cool. Till I realized wakin up early was the real boss shit.", "if you look at people in your circle and don't get inspired, then you don't have a circle, you have a cage", "shout out to everyone making progress that no one recognize", "Don't limit your challlenges. Challenge your limits!", "Yes it is going to be hard but it's going to be worth it!"
+Ambitious = [ "Shoutout to the girls who put in major work. Who are up early ass hell for school/work. Girls that study. Grind. Who persevere & prioritize self worth/lov. Who rise above & hold it down even when they're falling apart, to the girls whopush harder.", "I used to think going to sleep late was cool. Till I realized wakin up early was the real boss shit.", "if you look at people in your circle and don't get inspired, then you don't have a circle, you have a cage", "shout out to everyone making progress that no one recognize", "Don't limit your challlenges. Challenge your limits!", "Yes it is going to be hard but it's going to be worth it!", "I need to go way harder. I'm not satisfied"
     ]
 Angry = [ "Speak when you are angry and you'll make the best speech you'll ever REGRET!!!", "Never let your emotions overpower your intelligence!!!", "Don't do something permanentely stupid just because you're temporarily upset!!", "Anger dosen't solve anything. It builds nothing, but it can destroy everything.", "You will not be punished for your anger, you will be punished by your anger."]
 
@@ -8,7 +8,7 @@ Sad = [ "Be strong because things will get better. It maybe stormy now but it ne
 
 Happy = [ "Being happy NEVER goes out of style. :)", "Happiness is letting go of what you think your life is supposed to be. :)", "It's fun to be happy. :)", "People look at you as a role model when you happy. :)","Happiness never decreases by being shared. :)" ]
 
-Woke = [ "It's not the world that's cruel. It's the people in it.", "Life is not a problem to be solved, but a reality to be experienced.", "Dead people receive more flowers than the living ones because regret is stronger than gratitude.", "Listen to your possibilites not your insecurities", "OUTSIDERS know all your business from INSIDERS. ", "Be forgiving, Be understanding, But don't be a fool.", ]
+Woke = [ "It's not the world that's cruel. It's the people in it.", "Life is not a problem to be solved, but a reality to be experienced.", "Dead people receive more flowers than the living ones because regret is stronger than gratitude.", "Listen to your possibilites not your insecurities", "OUTSIDERS know all your business from INSIDERS. ", "Be forgiving, Be understanding, But don't be a fool.", "Once you've matured you realize SILENCE is more powerful then proving a point." ]
 
 Scared = [ "Sometimes what you are most afraid of doing is the very thing that will set you free", "Don't be afraid to fail. Be afraid not to try", "It is okay to be scared because that means you are about to do something very very brave" ]
 
@@ -18,7 +18,7 @@ Disgust = ["The greatest pleasures are only narrowly separated from disgust", "D
 
 Confused = ["If I look confused it is because I am thinkning", "Right now, I'm stuck between what if, what might, what could have, and what never will and all I want to known is what actuallly is", "I don't think people understand how stressful how stressful it is to explain what's going on in your head when you don't even understand it yourself."]
 
-Heartbroken = ["I am happy, hurting and healing at the same time. Don't ask how I'm doing it because I don't know, but i'm doing it and I'm so proud of myself", "the more chances you give someone to heart you the less respect they'll start to have for you"]
+Heartbroken = ["I am happy, hurting and healing at the same time. Don't ask how I'm doing it because I don't know, but i'm doing it and I'm so proud of myself", "the more chances you give someone to heart you the less respect they'll start to have for you","A broken heart is just the growing pains necessary so that you can love more completely when the real thing comes along. They'll take advantage of your forgiveness. They won't bbe afraid to lose you because they think you will never walk away. Never let a perso get comfortable with disrespecting you","Friendly reminder: Do not check up on the toxic person you left, don't check their socials, don't hit them up to see how they're doing. Your peace of mind is too important to get wrapped up up in it."]
 
 random.shuffle(Ambitious)
 random.shuffle(Sad)
@@ -117,13 +117,13 @@ def color(mood):
         mood_color = "red lighten-4"
         return mood_color
     if mood.capitalize() == "Scared":
-        mood_color = "purple lighten-2"
+        mood_color = "purple lighten-4"
         return mood_color
     if mood.capitalize() == "Surprised":
         mood_color = "yellow lighten-4"
         return mood_color
     if mood.capitalize() == "Disgust":
-        mood_color = "gray lighten-9"
+        mood_color = "blue lighten-4"
         return mood_color
     if mood.capitalize() == "Confused":
         mood_color = " lime accent-2"
